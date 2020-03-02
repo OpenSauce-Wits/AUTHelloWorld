@@ -1,0 +1,2 @@
+rootProject.name='AUTHelloWorld'
+include ':app'
