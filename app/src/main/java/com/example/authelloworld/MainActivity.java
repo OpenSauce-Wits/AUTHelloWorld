@@ -2,11 +2,13 @@ package com.example.authelloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 showText.setText(addTextBox.getText());
+                Toast.makeText(getApplicationContext(), "Button has been clicked", Toast.LENGTH_SHORT).show();
             }
         });
     }
